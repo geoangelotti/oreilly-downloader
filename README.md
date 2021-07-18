@@ -91,7 +91,7 @@ Copy the ID of the book (in this case `9780321635754`).
 We can now download the book with the command:
 
 ```sh
-(cat <cookie json file> | docker run -i  geoangelotti/orlydl:latest sso <book id>) > "<name of your file>.epub"
+(cat <cookie json file> | docker run -i geoangelotti/orlydl:latest sso <book id>) > "<name of your file>.epub"
 ```
 
 |argument | explanation | example |
@@ -102,7 +102,7 @@ We can now download the book with the command:
 
 
 ```sh
-(cat cookie.json | docker run -i  geoangelotti/orlydl:latest sso 9780321635754) > "Art of Computer Programming.epub"
+(cat cookie.json | docker run -i geoangelotti/orlydl:latest sso 9780321635754) > "Art of Computer Programming.epub"
 ```
 
 > Note that it will take a long time to download. Output is only buffered every 4k bytes (so you might not see any console output for awhile)
